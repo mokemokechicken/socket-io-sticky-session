@@ -1,8 +1,8 @@
 はじめに
 =======
 
-npmの `socket-io-sticky-session` が AWSのALBなどのProxyサーバの後ろにいて、
-ProxyサーバからKeep-Alive接続される場合、
+npmの `socket-io-sticky-session` が AWSのALBなどのLoadBalancerの後ろにいて、
+LoadBalancerからKeep-Alive接続される場合、
 X-Forwarded-Forなどのヘッダによって正しいWorkerに割り振られないことがある。
 
 という検証です。
